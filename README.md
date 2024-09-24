@@ -38,3 +38,28 @@ To add new vulnerability patterns, edit the `vulnerabilities.json` file and incl
         "solution": "Suggested solution"
     }
 }
+```
+
+Disclaimer
+This tool is for educational purposes only. It may not detect all vulnerabilities and should be used in conjunction with more advanced static analysis tools.
+
+#### `.gitignore`
+This file is used to exclude unnecessary files from the repository.
+
+```txt
+__pycache__/
+*.pyc
+*.pyo
+```
+
+How It Works
+Pattern Matching: The script uses regular expressions to search for vulnerable patterns in Python and JavaScript files.
+Vulnerability Definitions: Vulnerabilities are defined in the vulnerabilities.json file, making it easy to add or modify vulnerability checks.
+Output: For each vulnerability found, the script prints the file name, line number, a description of the vulnerability, and a suggested fix.
+
+Installation & Running
+Add Your Codebase: Place your code files (Python or JavaScript) in the directory or specify the folder to scan.
+Run the Script: Use python auditor.py to scan your project.
+
+Extensibility
+You can easily extend the tool by adding more vulnerabilities to the vulnerabilities.json file. You can also integrate it with Continuous Integration (CI) pipelines to automate code audits.
