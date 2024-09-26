@@ -1,1 +1,23 @@
 
+{
+    "SQL Injection": {
+        "pattern": "SELECT.*FROM.*WHERE.*",
+        "description": "SQL Injection occurs when user input is included in SQL queries without proper sanitization.",
+        "solution": "Use parameterized queries or ORM to avoid SQL Injection."
+    },
+    "Cross-Site Scripting (XSS)": {
+        "pattern": "<script>.*</script>",
+        "description": "XSS allows attackers to inject malicious scripts into web applications, potentially compromising user data.",
+        "solution": "Sanitize user input and use Content Security Policy (CSP)."
+    },
+    "Weak Hashing Algorithm (MD5)": {
+        "pattern": "md5\\(",
+        "description": "MD5 is considered a weak hashing algorithm and is vulnerable to collision attacks.",
+        "solution": "Use stronger hashing algorithms like SHA-256 or bcrypt."
+    },
+    "Hardcoded Password": {
+        "pattern": "password\\s*=\\s*['\"].*['\"]",
+        "description": "Hardcoded passwords in source code are a serious security risk.",
+        "solution": "Use environment variables or secure vaults to manage passwords."
+    }
+}
