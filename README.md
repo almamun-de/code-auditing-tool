@@ -63,5 +63,3 @@ Run the Script: Use python auditor.py to scan your project.
 
 Extensibility
 You can easily extend the tool by adding more vulnerabilities to the vulnerabilities.json file. You can also integrate it with Continuous Integration (CI) pipelines to automate code audits.
-
-asd
